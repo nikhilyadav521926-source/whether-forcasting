@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌦 Weather Forecast</h1>
+        <p>Check the weather of any city</p>
+
+        <div class="search">
+            <input type="text" id="city"
+                   placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="weather">
+            <h2 id="cityName">Your City</h2>
+            <div id="icon">🌤️</div>
+            <h1 id="temp">-- °C</h1>
+            <h3 id="description">Weather condition</h3>
+
+            <div class="details">
+                <div>
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+                <div>
+                    <h3>💨 Wind Speed</h3>
+                    <p id="wind">-- m/s</p>
+                </div>
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
